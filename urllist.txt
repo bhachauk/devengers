@@ -1,0 +1,6 @@
+https://query1.finance.yahoo.com/v7/finance/download/QCOM?period1=1536933547&period2=1568469547&interval=1d&events=history&crumb=Qu/QEO.jiC1
+https://query1.finance.yahoo.com/v7/finance/download/005930.KS?period1=1536932122&period2=1568468122&interval=1d&events=history&crumb=Qu/QEO.jiC1
+https://query1.finance.yahoo.com/v7/finance/download/066570.KS?period1=1536934002&period2=1568470002&interval=1d&events=history&crumb=Qu/QEO.jiC1
+https://query1.finance.yahoo.com/v7/finance/download/AAPL?period1=1536934116&period2=1568470116&interval=1d&events=history&crumb=Qu/QEO.jiC1
+https://query1.finance.yahoo.com/v7/finance/download/INTC?period1=1536934265&period2=1568470265&interval=1d&events=history&crumb=Qu/QEO.jiC1
+https://query1.finance.yahoo.com/v7/finance/download/GOOG?period1=1536934357&period2=1568470357&interval=1d&events=history&crumb=Qu/QEO.jiC1
