@@ -27,15 +27,15 @@ def hello():
     <h3>GRU</h3>
     <h5>Loss : 0.176</h5>
     <h5>Loss / Learning Trend</h5>
-    <img src="https://github.com/Bhanuchander210/devengers/blob/master/outputs/gru_4.png"/>
+    <img src="https://raw.githubusercontent.com/Bhanuchander210/devengers/master/outputs/gru_4.png"></img>
     
     <h3>LSTM</h3>
     <h5>Loss : 0.172</h5>
     <h5>Loss / Learning Trend</h5>
-    <img src="https://github.com/Bhanuchander210/devengers/blob/master/outputs/lstm_4.png"/>
+    <img src="https://raw.githubusercontent.com/Bhanuchander210/devengers/master/outputs/lstm_4.png"></img>
     
     <h2>To Predict the current / Intra day prediction checkout 'test.py' GitHub:</h2>
-    <a href="https://github.com/Bhanuchander210/devengers"></a>
+    <a href="https://github.com/Bhanuchander210/devengers">Link</a>
     '''
     return html
 
