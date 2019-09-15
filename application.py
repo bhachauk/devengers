@@ -14,7 +14,7 @@ def hello():
     
     <div align="center">
         <h3 >Trend</h3>
-        <img src="outputs/final.png"/>
+        <img src="https://raw.githubusercontent.com/Bhanuchander210/devengers/master/outputs/final.png"/>
     </div>
     
     <h3 >Techniques Used</h3>
