@@ -1,4 +1,6 @@
 from flask import Flask
+from flask import request
+import pickleutil as pu
 app = Flask(__name__)
 
 
@@ -38,6 +40,15 @@ def hello():
     <a href="https://github.com/Bhanuchander210/devengers">Link</a>
     '''
     return html
+
+
+@app.route("/predict")
+def predict():
+    loaded = request.args.get('input')
+    loaded = list([ float(x) for x in str(loaded).split(',')])
+    test = loaded.append(0)
+    scaled = pu.get_transformed(test)
+    return "hi"
 
 
 if __name__ == '__main__':

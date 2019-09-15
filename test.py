@@ -20,27 +20,27 @@ input = input.dropna()
 input[final_target] = input[target_col].shift(-1)
 next_test = input.tail(1)
 input = input.dropna()
-print(next_test.index[0])
 
 next_test.fillna(0, inplace=True)
-print(next_test.head())
+print(next_test.values)
 
 scaler = pickle.load(open("models/scaler.pkl", 'rb'))
 test = scaler.transform(next_test)[0][:-1]
 
 test = np.reshape(test, (1, 1, len(test)))
-
-print('Model required Data :')
-print(test)
 # identical to the previous one
-model = load_model('models/LSTM_4.h5')
-predicted = model.predict(test)
-print('predicted...')
-print(predicted)
+models = []
+models.append(('LSTM', load_model('models/LSTM_4.h5')))
+models.append(('GRU', load_model('models/GRU_4.h5')))
 
-test = [-1] * input.shape[1]
-test[(input.shape[1]-1)] = predicted[0][0]
-actual_ans = scaler.inverse_transform([test])
-print(actual_ans[0][input.shape[1]-1])
+for name, model in models:
+    predicted = model.predict(test)
+    temp = [-1] * input.shape[1]
+    temp[(input.shape[1]-1)] = predicted[0][0]
+    actual_ans = scaler.inverse_transform([temp])
+    pred = actual_ans[0][input.shape[1] - 1]
+
+    print(name + ' prediction : ' + str(pred))
+    plt.scatter(x= len(input)+1, y =pred)
 plt.plot(input['Close'])
 plt.show()
