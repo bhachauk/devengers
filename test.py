@@ -33,7 +33,7 @@ test = np.reshape(test, (1, 1, len(test)))
 print('Model required Data :')
 print(test)
 # identical to the previous one
-model = load_model('models/GRU_4.h5')
+model = load_model('models/LSTM_4.h5')
 predicted = model.predict(test)
 print('predicted...')
 print(predicted)
